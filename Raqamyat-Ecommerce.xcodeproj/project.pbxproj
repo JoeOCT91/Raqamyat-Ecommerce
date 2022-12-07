@@ -34,6 +34,8 @@
 		868EF7E8294150E5005458AD /* ProductDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E7294150E5005458AD /* ProductDetailsController.swift */; };
 		868EF7EA2941516E005458AD /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E92941516E005458AD /* ProductDetailsViewModel.swift */; };
 		868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7EB29415253005458AD /* ProductDetailsView.swift */; };
+		868EF7F029415882005458AD /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF7EF29415882005458AD /* CombineMoya */; };
+		868EF7F229415882005458AD /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF7F129415882005458AD /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868EF7F229415882005458AD /* Moya in Frameworks */,
+				868EF7F029415882005458AD /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 			children = (
 				868EF7AE29411467005458AD /* Shared */,
 				868EF7B02941155F005458AD /* BaseCoordinator */,
+				868EF7ED2941575E005458AD /* Network */,
 				868EF7D6294120FE005458AD /* Protocols */,
 				868EF7B729411816005458AD /* Factories */,
 				868EF7CF29411C96005458AD /* Router */,
@@ -266,6 +271,13 @@
 			path = ProuductDetails;
 			sourceTree = "<group>";
 		};
+		868EF7ED2941575E005458AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +294,10 @@
 			dependencies = (
 			);
 			name = "Raqamyat-Ecommerce";
+			packageProductDependencies = (
+				868EF7EF29415882005458AD /* CombineMoya */,
+				868EF7F129415882005458AD /* Moya */,
+			);
 			productName = "Raqamyat-Ecommerce";
 			productReference = 868EF79729411407005458AD /* Raqamyat-Ecommerce.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 868EF78E29411407005458AD;
+			packageReferences = (
+				868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 868EF79829411407005458AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -574,6 +593,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		868EF7EF29415882005458AD /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		868EF7F129415882005458AD /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 868EF78F29411407005458AD /* Project object */;
 }

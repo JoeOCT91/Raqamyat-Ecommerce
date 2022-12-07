@@ -30,10 +30,14 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
     
     private func showHome() {
         let homeOutput = factory.createHomeOutput()
+        homeOutput.onProductTapPublisher.sink { [unowned self] tapedProductId in
+            self.pushProductDetails(forProduct: tapedProductId)
+        }.store(in: &subscriptions)
         router.setRootModule(homeOutput)
     }
     
     private func pushProductDetails(forProduct withId: Int) {
-        let productDetailsHandler = factory
+        let productDetailsHandler = factory.createProductDetailsHandler(forProduct: withId)
+        router.push(productDetailsHandler)
     }
 }
