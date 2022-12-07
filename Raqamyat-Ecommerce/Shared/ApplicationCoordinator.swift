@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-fileprivate var splashHasBeenShowed: Bool = false
+fileprivate var splashHasBeenShowed: Bool = true
 
 fileprivate enum LaunchInstructor {
     case splash, main
@@ -50,7 +50,9 @@ final class ApplicationCoordinator: BaseCoordinator {
         print("ApplicationCoordinator >> runSplashFlow")
         let coordinator = coordinatorFactory.createSplashCoordinator(router: router)
         coordinator.finishFlowPublisher.sink { [unowned self] _ in
-            
+            splashHasBeenShowed = true
+            self.start()
+            self.removeDependency(coordinator)
         }.store(in: &subscriptions)
         addDependency(coordinator)
         coordinator.start()

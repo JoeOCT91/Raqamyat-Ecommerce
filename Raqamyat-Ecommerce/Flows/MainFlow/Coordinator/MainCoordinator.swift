@@ -32,4 +32,8 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
         let homeOutput = factory.createHomeOutput()
         router.setRootModule(homeOutput)
     }
+    
+    private func pushProductDetails(forProduct withId: Int) {
+        let productDetailsHandler = factory
+    }
 }

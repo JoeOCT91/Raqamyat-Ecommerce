@@ -1,31 +1,32 @@
 //
-//  Home.swift
+//  ProductDetailsController.swift
 //  Raqamyat-Ecommerce
 //
-//  Created by Yousef Mohamed on 07/12/2022.
+//  Created by Yousef Mohamed on 08/12/2022.
 //
 
 import UIKit
 import Combine
 
-protocol HomeControllerProtocol: Presentable {
-    var onProductTapPublisher: PassthroughSubject<Int, Never> { get }
+protocol ProductDetailsControllerProtocol: Presentable {
+    
 }
 
-final class HomeController: UIViewController, HomeControllerProtocol {
+final class ProductDetailsController: UIViewController, ProductDetailsControllerProtocol {
+
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Coordinator helpers ...
     //----------------------------------------------------------------------------------------------------------------
-    var onProductTapPublisher = PassthroughSubject<Int, Never>()
+    var onProductTapPublisher = PassthroughSubject<Void, Never>()
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Properties ...
     //----------------------------------------------------------------------------------------------------------------
-    private var viewModel: HomeViewModelProtocol
-    private var contentView: HomeView
+    private var viewModel: ProductDetailsViewModelProtocol
+    private var contentView: ProductDetailsView
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Life cycle methods ...
     //----------------------------------------------------------------------------------------------------------------
-    init(viewModel: HomeViewModelProtocol, view: HomeView) {
+    init(viewModel: ProductDetailsViewModelProtocol, view: ProductDetailsView) {
         self.contentView = view
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -44,9 +45,17 @@ final class HomeController: UIViewController, HomeControllerProtocol {
         bindViewModelDataStreamsToView()
         bindViewInteractionsDownstreamToViewModel()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 }
 
-extension HomeController {
+extension ProductDetailsController {
     private func bindViewModelDataStreamsToView() {
         
     }

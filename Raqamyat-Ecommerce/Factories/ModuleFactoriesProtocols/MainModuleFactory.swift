@@ -9,6 +9,7 @@ import Foundation
 
 protocol MainModuleFactory: AnyObject {
     func createHomeOutput() -> HomeControllerProtocol
+    func createProductDetailsHandler(forProduct withId: Int) -> ProductDetailsControllerProtocol
 }
 
 extension ModuleFactory: MainModuleFactory {
@@ -20,5 +21,10 @@ extension ModuleFactory: MainModuleFactory {
         return controller
     }
     
-    
+    func createProductDetailsHandler(forProduct withId: Int) -> ProductDetailsControllerProtocol {
+        let view = ProductDetailsView()
+        let viewModel = ProductDetailsViewModel()
+        let controller = ProductDetailsController(viewModel: viewModel, view: view)
+        return controller
+    }
 }

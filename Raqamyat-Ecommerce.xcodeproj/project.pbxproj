@@ -31,6 +31,9 @@
 		868EF7E029413C26005458AD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7DF29413C26005458AD /* MainCoordinator.swift */; };
 		868EF7E429413FA2005458AD /* SplashModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E329413FA2005458AD /* SplashModuleFactory.swift */; };
 		868EF7E62941424F005458AD /* MainModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E52941424F005458AD /* MainModuleFactory.swift */; };
+		868EF7E8294150E5005458AD /* ProductDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E7294150E5005458AD /* ProductDetailsController.swift */; };
+		868EF7EA2941516E005458AD /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7E92941516E005458AD /* ProductDetailsViewModel.swift */; };
+		868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7EB29415253005458AD /* ProductDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		868EF7DF29413C26005458AD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		868EF7E329413FA2005458AD /* SplashModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModuleFactory.swift; sourceTree = "<group>"; };
 		868EF7E52941424F005458AD /* MainModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleFactory.swift; sourceTree = "<group>"; };
+		868EF7E7294150E5005458AD /* ProductDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsController.swift; sourceTree = "<group>"; };
+		868EF7E92941516E005458AD /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		868EF7EB29415253005458AD /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +259,9 @@
 		868EF7E229413E0C005458AD /* ProuductDetails */ = {
 			isa = PBXGroup;
 			children = (
+				868EF7E92941516E005458AD /* ProductDetailsViewModel.swift */,
+				868EF7E7294150E5005458AD /* ProductDetailsController.swift */,
+				868EF7EB29415253005458AD /* ProductDetailsView.swift */,
 			);
 			path = ProuductDetails;
 			sourceTree = "<group>";
@@ -338,12 +347,15 @@
 				868EF7D329411E6D005458AD /* WeakRouter.swift in Sources */,
 				868EF7CE29411C5D005458AD /* ApplicationCoordinatorFactory.swift in Sources */,
 				868EF7D82941211C005458AD /* Presentable.swift in Sources */,
+				868EF7EA2941516E005458AD /* ProductDetailsViewModel.swift in Sources */,
 				868EF7B229411568005458AD /* Coordinator.swift in Sources */,
 				868EF79B29411407005458AD /* AppDelegate.swift in Sources */,
+				868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */,
 				868EF7C5294119ED005458AD /* SplashController.swift in Sources */,
 				868EF7D129411E5A005458AD /* AnyRouter.swift in Sources */,
 				868EF79D29411407005458AD /* SceneDelegate.swift in Sources */,
 				868EF7C929411A0B005458AD /* HomeViewModel.swift in Sources */,
+				868EF7E8294150E5005458AD /* ProductDetailsController.swift in Sources */,
 				868EF7C3294119D7005458AD /* SplashView.swift in Sources */,
 				868EF7C129411994005458AD /* SpashViewModel.swift in Sources */,
 				868EF7C729411A00005458AD /* HomeController.swift in Sources */,
