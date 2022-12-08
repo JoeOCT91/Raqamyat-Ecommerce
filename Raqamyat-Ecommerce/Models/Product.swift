@@ -16,6 +16,7 @@ struct Product: Codable, Hashable {
     let price: String
     let oldPrice: String
     let percentage: String
+    let image: String
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -26,5 +27,6 @@ struct Product: Codable, Hashable {
         case price
         case oldPrice = "old_price"
         case percentage
+        case image
     }
 }

@@ -51,6 +51,48 @@
 		868EF8122941DE4D005458AD /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8112941DE4D005458AD /* Meta.swift */; };
 		868EF8152941E6D6005458AD /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF8142941E6D6005458AD /* CombineCocoa */; };
 		868EF8182941E8EE005458AD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF8172941E8EE005458AD /* Kingfisher */; };
+		868EF8202941EE55005458AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 868EF81F2941EE55005458AD /* Localizable.strings */; };
+		868EF8222941EE8F005458AD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8212941EE8E005458AD /* Strings.swift */; };
+		868EF8242941EE9D005458AD /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8232941EE9D005458AD /* FontsManager.swift */; };
+		868EF8382941EEA7005458AD /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8262941EEA7005458AD /* Poppins-ExtraLight.ttf */; };
+		868EF8392941EEA7005458AD /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8272941EEA7005458AD /* Poppins-ThinItalic.ttf */; };
+		868EF83A2941EEA7005458AD /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8282941EEA7005458AD /* Poppins-ExtraLightItalic.ttf */; };
+		868EF83B2941EEA7005458AD /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8292941EEA7005458AD /* Poppins-BoldItalic.ttf */; };
+		868EF83C2941EEA7005458AD /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82A2941EEA7005458AD /* Poppins-Light.ttf */; };
+		868EF83D2941EEA7005458AD /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82B2941EEA7005458AD /* Poppins-Medium.ttf */; };
+		868EF83E2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82C2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf */; };
+		868EF83F2941EEA7005458AD /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82D2941EEA7005458AD /* Poppins-ExtraBoldItalic.ttf */; };
+		868EF8402941EEA7005458AD /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82E2941EEA7005458AD /* Poppins-ExtraBold.ttf */; };
+		868EF8412941EEA7005458AD /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF82F2941EEA7005458AD /* Poppins-BlackItalic.ttf */; };
+		868EF8422941EEA7005458AD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8302941EEA7005458AD /* Poppins-Regular.ttf */; };
+		868EF8432941EEA7005458AD /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8312941EEA7005458AD /* Poppins-LightItalic.ttf */; };
+		868EF8442941EEA7005458AD /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8322941EEA7005458AD /* Poppins-Bold.ttf */; };
+		868EF8452941EEA7005458AD /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8332941EEA7005458AD /* Poppins-Black.ttf */; };
+		868EF8462941EEA7005458AD /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8342941EEA7005458AD /* Poppins-Thin.ttf */; };
+		868EF8472941EEA7005458AD /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8352941EEA7005458AD /* Poppins-SemiBold.ttf */; };
+		868EF8482941EEA7005458AD /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8362941EEA7005458AD /* Poppins-Italic.ttf */; };
+		868EF8492941EEA7005458AD /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8372941EEA7005458AD /* Poppins-MediumItalic.ttf */; };
+		868EF84B2941EEC4005458AD /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF84A2941EEC4005458AD /* ColorsManager.swift */; };
+		868EF84E2941F1CB005458AD /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF84D2941F1CB005458AD /* SwifterSwift */; };
+		868EF8502941F850005458AD /* AssetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF84F2941F850005458AD /* AssetsManager.swift */; };
+		868EF8642941F999005458AD /* TT Norms Pro Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8522941F999005458AD /* TT Norms Pro Bold Italic.otf */; };
+		868EF8652941F999005458AD /* TT Norms Pro ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8532941F999005458AD /* TT Norms Pro ExtraBold.otf */; };
+		868EF8662941F999005458AD /* TT Norms Pro Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8542941F999005458AD /* TT Norms Pro Italic.otf */; };
+		868EF8672941F999005458AD /* TT Norms Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8552941F999005458AD /* TT Norms Pro Black.otf */; };
+		868EF8682941F999005458AD /* TT Norms Pro Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8562941F999005458AD /* TT Norms Pro Light Italic.otf */; };
+		868EF8692941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8572941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf */; };
+		868EF86A2941F999005458AD /* TT Norms Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8582941F999005458AD /* TT Norms Pro Regular.otf */; };
+		868EF86B2941F999005458AD /* TT Norms Pro ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8592941F999005458AD /* TT Norms Pro ExtraLight.otf */; };
+		868EF86C2941F999005458AD /* TT Norms Pro Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85A2941F999005458AD /* TT Norms Pro Thin Italic.otf */; };
+		868EF86D2941F999005458AD /* TT Norms Pro ExtraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85B2941F999005458AD /* TT Norms Pro ExtraBlack.otf */; };
+		868EF86E2941F999005458AD /* TT Norms Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85C2941F999005458AD /* TT Norms Pro Bold.otf */; };
+		868EF86F2941F999005458AD /* TT Norms Pro ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85D2941F999005458AD /* TT Norms Pro ExtraLight Italic.otf */; };
+		868EF8702941F999005458AD /* TT Norms Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85E2941F999005458AD /* TT Norms Pro Light.otf */; };
+		868EF8712941F999005458AD /* TT Norms Pro Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF85F2941F999005458AD /* TT Norms Pro Medium Italic.otf */; };
+		868EF8722941F999005458AD /* TT Norms Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8602941F999005458AD /* TT Norms Pro Black Italic.otf */; };
+		868EF8732941F999005458AD /* TT Norms Pro ExtraBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8612941F999005458AD /* TT Norms Pro ExtraBold Italic.otf */; };
+		868EF8742941F999005458AD /* TT Norms Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8622941F999005458AD /* TT Norms Pro Medium.otf */; };
+		868EF8752941F999005458AD /* TT Norms Pro Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868EF8632941F999005458AD /* TT Norms Pro Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +137,48 @@
 		868EF80D2941DDB9005458AD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		868EF80F2941DE08005458AD /* APIResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseData.swift; sourceTree = "<group>"; };
 		868EF8112941DE4D005458AD /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		868EF81C2941ECD0005458AD /* Colors.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		868EF81F2941EE55005458AD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		868EF8212941EE8E005458AD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		868EF8232941EE9D005458AD /* FontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		868EF8262941EEA7005458AD /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		868EF8272941EEA7005458AD /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		868EF8282941EEA7005458AD /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		868EF8292941EEA7005458AD /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		868EF82A2941EEA7005458AD /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		868EF82B2941EEA7005458AD /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		868EF82C2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		868EF82D2941EEA7005458AD /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		868EF82E2941EEA7005458AD /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		868EF82F2941EEA7005458AD /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		868EF8302941EEA7005458AD /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		868EF8312941EEA7005458AD /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		868EF8322941EEA7005458AD /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		868EF8332941EEA7005458AD /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		868EF8342941EEA7005458AD /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		868EF8352941EEA7005458AD /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		868EF8362941EEA7005458AD /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		868EF8372941EEA7005458AD /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		868EF84A2941EEC4005458AD /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
+		868EF84F2941F850005458AD /* AssetsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsManager.swift; sourceTree = "<group>"; };
+		868EF8522941F999005458AD /* TT Norms Pro Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Bold Italic.otf"; sourceTree = "<group>"; };
+		868EF8532941F999005458AD /* TT Norms Pro ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraBold.otf"; sourceTree = "<group>"; };
+		868EF8542941F999005458AD /* TT Norms Pro Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Italic.otf"; sourceTree = "<group>"; };
+		868EF8552941F999005458AD /* TT Norms Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Black.otf"; sourceTree = "<group>"; };
+		868EF8562941F999005458AD /* TT Norms Pro Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Light Italic.otf"; sourceTree = "<group>"; };
+		868EF8572941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraBlack Italic.otf"; sourceTree = "<group>"; };
+		868EF8582941F999005458AD /* TT Norms Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Regular.otf"; sourceTree = "<group>"; };
+		868EF8592941F999005458AD /* TT Norms Pro ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraLight.otf"; sourceTree = "<group>"; };
+		868EF85A2941F999005458AD /* TT Norms Pro Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Thin Italic.otf"; sourceTree = "<group>"; };
+		868EF85B2941F999005458AD /* TT Norms Pro ExtraBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraBlack.otf"; sourceTree = "<group>"; };
+		868EF85C2941F999005458AD /* TT Norms Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Bold.otf"; sourceTree = "<group>"; };
+		868EF85D2941F999005458AD /* TT Norms Pro ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraLight Italic.otf"; sourceTree = "<group>"; };
+		868EF85E2941F999005458AD /* TT Norms Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Light.otf"; sourceTree = "<group>"; };
+		868EF85F2941F999005458AD /* TT Norms Pro Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Medium Italic.otf"; sourceTree = "<group>"; };
+		868EF8602941F999005458AD /* TT Norms Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Black Italic.otf"; sourceTree = "<group>"; };
+		868EF8612941F999005458AD /* TT Norms Pro ExtraBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro ExtraBold Italic.otf"; sourceTree = "<group>"; };
+		868EF8622941F999005458AD /* TT Norms Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Medium.otf"; sourceTree = "<group>"; };
+		868EF8632941F999005458AD /* TT Norms Pro Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Norms Pro Thin.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +189,7 @@
 				868EF800294168F2005458AD /* SnapKit in Frameworks */,
 				868EF7F229415882005458AD /* Moya in Frameworks */,
 				868EF8152941E6D6005458AD /* CombineCocoa in Frameworks */,
+				868EF84E2941F1CB005458AD /* SwifterSwift in Frameworks */,
 				868EF7F029415882005458AD /* CombineMoya in Frameworks */,
 				868EF8182941E8EE005458AD /* Kingfisher in Frameworks */,
 			);
@@ -132,15 +217,15 @@
 		868EF79929411407005458AD /* Raqamyat-Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
-				868EF80829417AC7005458AD /* CustomViews */,
-				868EF805294172F6005458AD /* Utilities */,
 				868EF7AE29411467005458AD /* Shared */,
+				868EF805294172F6005458AD /* Utilities */,
 				868EF7B02941155F005458AD /* BaseCoordinator */,
 				868EF7ED2941575E005458AD /* Network */,
 				868EF7D6294120FE005458AD /* Protocols */,
 				868EF7B729411816005458AD /* Factories */,
 				868EF7CF29411C96005458AD /* Router */,
 				868EF7D929412140005458AD /* Models */,
+				868EF80829417AC7005458AD /* CustomViews */,
 				868EF7AF29411478005458AD /* Flows */,
 				868EF7CC29411A66005458AD /* Resources */,
 				868EF7A829411408005458AD /* Info.plist */,
@@ -226,8 +311,11 @@
 		868EF7CC29411A66005458AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				868EF81E2941EE1E005458AD /* Strings */,
+				868EF81D2941ED20005458AD /* Fonts */,
+				868EF81B2941ECAE005458AD /* Colors */,
+				868EF81A2941EC74005458AD /* Assets */,
 				868EF7A529411408005458AD /* LaunchScreen.storyboard */,
-				868EF7A329411408005458AD /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -360,6 +448,93 @@
 			path = APIMain;
 			sourceTree = "<group>";
 		};
+		868EF81A2941EC74005458AD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				868EF84F2941F850005458AD /* AssetsManager.swift */,
+				868EF7A329411408005458AD /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		868EF81B2941ECAE005458AD /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				868EF84A2941EEC4005458AD /* ColorsManager.swift */,
+				868EF81C2941ECD0005458AD /* Colors.txt */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		868EF81D2941ED20005458AD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				868EF8512941F999005458AD /* ttNormsProCufonfonts */,
+				868EF8252941EEA7005458AD /* Poppins */,
+				868EF8232941EE9D005458AD /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		868EF81E2941EE1E005458AD /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				868EF8212941EE8E005458AD /* Strings.swift */,
+				868EF81F2941EE55005458AD /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		868EF8252941EEA7005458AD /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				868EF8262941EEA7005458AD /* Poppins-ExtraLight.ttf */,
+				868EF8272941EEA7005458AD /* Poppins-ThinItalic.ttf */,
+				868EF8282941EEA7005458AD /* Poppins-ExtraLightItalic.ttf */,
+				868EF8292941EEA7005458AD /* Poppins-BoldItalic.ttf */,
+				868EF82A2941EEA7005458AD /* Poppins-Light.ttf */,
+				868EF82B2941EEA7005458AD /* Poppins-Medium.ttf */,
+				868EF82C2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf */,
+				868EF82D2941EEA7005458AD /* Poppins-ExtraBoldItalic.ttf */,
+				868EF82E2941EEA7005458AD /* Poppins-ExtraBold.ttf */,
+				868EF82F2941EEA7005458AD /* Poppins-BlackItalic.ttf */,
+				868EF8302941EEA7005458AD /* Poppins-Regular.ttf */,
+				868EF8312941EEA7005458AD /* Poppins-LightItalic.ttf */,
+				868EF8322941EEA7005458AD /* Poppins-Bold.ttf */,
+				868EF8332941EEA7005458AD /* Poppins-Black.ttf */,
+				868EF8342941EEA7005458AD /* Poppins-Thin.ttf */,
+				868EF8352941EEA7005458AD /* Poppins-SemiBold.ttf */,
+				868EF8362941EEA7005458AD /* Poppins-Italic.ttf */,
+				868EF8372941EEA7005458AD /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		868EF8512941F999005458AD /* ttNormsProCufonfonts */ = {
+			isa = PBXGroup;
+			children = (
+				868EF8522941F999005458AD /* TT Norms Pro Bold Italic.otf */,
+				868EF8532941F999005458AD /* TT Norms Pro ExtraBold.otf */,
+				868EF8542941F999005458AD /* TT Norms Pro Italic.otf */,
+				868EF8552941F999005458AD /* TT Norms Pro Black.otf */,
+				868EF8562941F999005458AD /* TT Norms Pro Light Italic.otf */,
+				868EF8572941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf */,
+				868EF8582941F999005458AD /* TT Norms Pro Regular.otf */,
+				868EF8592941F999005458AD /* TT Norms Pro ExtraLight.otf */,
+				868EF85A2941F999005458AD /* TT Norms Pro Thin Italic.otf */,
+				868EF85B2941F999005458AD /* TT Norms Pro ExtraBlack.otf */,
+				868EF85C2941F999005458AD /* TT Norms Pro Bold.otf */,
+				868EF85D2941F999005458AD /* TT Norms Pro ExtraLight Italic.otf */,
+				868EF85E2941F999005458AD /* TT Norms Pro Light.otf */,
+				868EF85F2941F999005458AD /* TT Norms Pro Medium Italic.otf */,
+				868EF8602941F999005458AD /* TT Norms Pro Black Italic.otf */,
+				868EF8612941F999005458AD /* TT Norms Pro ExtraBold Italic.otf */,
+				868EF8622941F999005458AD /* TT Norms Pro Medium.otf */,
+				868EF8632941F999005458AD /* TT Norms Pro Thin.otf */,
+			);
+			path = ttNormsProCufonfonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +542,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 868EF7AB29411408005458AD /* Build configuration list for PBXNativeTarget "Raqamyat-Ecommerce" */;
 			buildPhases = (
+				868EF8192941EC1E005458AD /* SwiftGen */,
 				868EF79329411407005458AD /* Sources */,
 				868EF79429411407005458AD /* Frameworks */,
 				868EF79529411407005458AD /* Resources */,
@@ -382,6 +558,7 @@
 				868EF7FF294168F2005458AD /* SnapKit */,
 				868EF8142941E6D6005458AD /* CombineCocoa */,
 				868EF8172941E8EE005458AD /* Kingfisher */,
+				868EF84D2941F1CB005458AD /* SwifterSwift */,
 			);
 			productName = "Raqamyat-Ecommerce";
 			productReference = 868EF79729411407005458AD /* Raqamyat-Ecommerce.app */;
@@ -416,6 +593,7 @@
 				868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */,
 				868EF8132941E6D5005458AD /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				868EF8162941E8EE005458AD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				868EF84C2941F1CB005458AD /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 			);
 			productRefGroup = 868EF79829411407005458AD /* Products */;
 			projectDirPath = "";
@@ -431,12 +609,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868EF83A2941EEA7005458AD /* Poppins-ExtraLightItalic.ttf in Resources */,
+				868EF8452941EEA7005458AD /* Poppins-Black.ttf in Resources */,
+				868EF8432941EEA7005458AD /* Poppins-LightItalic.ttf in Resources */,
+				868EF8752941F999005458AD /* TT Norms Pro Thin.otf in Resources */,
+				868EF8462941EEA7005458AD /* Poppins-Thin.ttf in Resources */,
+				868EF8692941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf in Resources */,
+				868EF8642941F999005458AD /* TT Norms Pro Bold Italic.otf in Resources */,
+				868EF8412941EEA7005458AD /* Poppins-BlackItalic.ttf in Resources */,
+				868EF8672941F999005458AD /* TT Norms Pro Black.otf in Resources */,
+				868EF8712941F999005458AD /* TT Norms Pro Medium Italic.otf in Resources */,
+				868EF86F2941F999005458AD /* TT Norms Pro ExtraLight Italic.otf in Resources */,
+				868EF8472941EEA7005458AD /* Poppins-SemiBold.ttf in Resources */,
+				868EF8682941F999005458AD /* TT Norms Pro Light Italic.otf in Resources */,
+				868EF86C2941F999005458AD /* TT Norms Pro Thin Italic.otf in Resources */,
+				868EF8442941EEA7005458AD /* Poppins-Bold.ttf in Resources */,
+				868EF8382941EEA7005458AD /* Poppins-ExtraLight.ttf in Resources */,
+				868EF83B2941EEA7005458AD /* Poppins-BoldItalic.ttf in Resources */,
+				868EF8702941F999005458AD /* TT Norms Pro Light.otf in Resources */,
+				868EF86B2941F999005458AD /* TT Norms Pro ExtraLight.otf in Resources */,
+				868EF86A2941F999005458AD /* TT Norms Pro Regular.otf in Resources */,
+				868EF83C2941EEA7005458AD /* Poppins-Light.ttf in Resources */,
+				868EF8402941EEA7005458AD /* Poppins-ExtraBold.ttf in Resources */,
 				868EF7A729411408005458AD /* LaunchScreen.storyboard in Resources */,
+				868EF83E2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf in Resources */,
+				868EF8742941F999005458AD /* TT Norms Pro Medium.otf in Resources */,
+				868EF86D2941F999005458AD /* TT Norms Pro ExtraBlack.otf in Resources */,
+				868EF86E2941F999005458AD /* TT Norms Pro Bold.otf in Resources */,
+				868EF83F2941EEA7005458AD /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				868EF8422941EEA7005458AD /* Poppins-Regular.ttf in Resources */,
+				868EF8722941F999005458AD /* TT Norms Pro Black Italic.otf in Resources */,
+				868EF8652941F999005458AD /* TT Norms Pro ExtraBold.otf in Resources */,
+				868EF8732941F999005458AD /* TT Norms Pro ExtraBold Italic.otf in Resources */,
+				868EF8392941EEA7005458AD /* Poppins-ThinItalic.ttf in Resources */,
+				868EF83D2941EEA7005458AD /* Poppins-Medium.ttf in Resources */,
+				868EF8202941EE55005458AD /* Localizable.strings in Resources */,
+				868EF8662941F999005458AD /* TT Norms Pro Italic.otf in Resources */,
+				868EF8482941EEA7005458AD /* Poppins-Italic.ttf in Resources */,
+				868EF8492941EEA7005458AD /* Poppins-MediumItalic.ttf in Resources */,
 				868EF7A429411408005458AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		868EF8192941EC1E005458AD /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PROJECT_DIR}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PROJECT_DIR}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		868EF79329411407005458AD /* Sources */ = {
@@ -454,19 +690,23 @@
 				868EF7DB29413A0F005458AD /* SplashCoordinator.swift in Sources */,
 				868EF802294169DA005458AD /* ProductsRepository.swift in Sources */,
 				868EF7FB294163A1005458AD /* ProductsEndPoint.swift in Sources */,
+				868EF84B2941EEC4005458AD /* ColorsManager.swift in Sources */,
 				868EF80B29417AE4005458AD /* ProductCell.swift in Sources */,
 				868EF7E62941424F005458AD /* MainModuleFactory.swift in Sources */,
 				868EF7D329411E6D005458AD /* WeakRouter.swift in Sources */,
 				868EF7CE29411C5D005458AD /* ApplicationCoordinatorFactory.swift in Sources */,
+				868EF8242941EE9D005458AD /* FontsManager.swift in Sources */,
 				868EF7D82941211C005458AD /* Presentable.swift in Sources */,
 				868EF7EA2941516E005458AD /* ProductDetailsViewModel.swift in Sources */,
 				868EF7B229411568005458AD /* Coordinator.swift in Sources */,
 				868EF79B29411407005458AD /* AppDelegate.swift in Sources */,
+				868EF8502941F850005458AD /* AssetsManager.swift in Sources */,
 				868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */,
 				868EF7FD29416814005458AD /* Product.swift in Sources */,
 				868EF7C5294119ED005458AD /* SplashController.swift in Sources */,
 				868EF7D129411E5A005458AD /* AnyRouter.swift in Sources */,
 				868EF79D29411407005458AD /* SceneDelegate.swift in Sources */,
+				868EF8222941EE8F005458AD /* Strings.swift in Sources */,
 				868EF80729417305005458AD /* Constants.swift in Sources */,
 				868EF7C929411A0B005458AD /* ProductsViewModel.swift in Sources */,
 				868EF7E8294150E5005458AD /* ProductDetailsController.swift in Sources */,
@@ -727,6 +967,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		868EF84C2941F1CB005458AD /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -754,6 +1002,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 868EF8162941E8EE005458AD /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		868EF84D2941F1CB005458AD /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF84C2941F1CB005458AD /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
