@@ -36,6 +36,11 @@
 		868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7EB29415253005458AD /* ProductDetailsView.swift */; };
 		868EF7F029415882005458AD /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF7EF29415882005458AD /* CombineMoya */; };
 		868EF7F229415882005458AD /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF7F129415882005458AD /* Moya */; };
+		868EF7F529415C70005458AD /* ProductDetailsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7F429415C70005458AD /* ProductDetailsEndPoint.swift */; };
+		868EF7F729415CC1005458AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7F629415CC1005458AD /* NetworkManager.swift */; };
+		868EF7F929415CE4005458AD /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7F829415CE4005458AD /* APITarget.swift */; };
+		868EF7FB294163A1005458AD /* ProductsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7FA294163A1005458AD /* ProductsEndPoint.swift */; };
+		868EF7FD29416814005458AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7FC29416814005458AD /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		868EF7E7294150E5005458AD /* ProductDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsController.swift; sourceTree = "<group>"; };
 		868EF7E92941516E005458AD /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		868EF7EB29415253005458AD /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		868EF7F429415C70005458AD /* ProductDetailsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsEndPoint.swift; sourceTree = "<group>"; };
+		868EF7F629415CC1005458AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		868EF7F829415CE4005458AD /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		868EF7FA294163A1005458AD /* ProductsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndPoint.swift; sourceTree = "<group>"; };
+		868EF7FC29416814005458AD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +231,7 @@
 		868EF7D929412140005458AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				868EF7FC29416814005458AD /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,8 +285,20 @@
 		868EF7ED2941575E005458AD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				868EF7F629415CC1005458AD /* NetworkManager.swift */,
+				868EF7F829415CE4005458AD /* APITarget.swift */,
+				868EF7F329415C61005458AD /* EndPoints */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		868EF7F329415C61005458AD /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				868EF7FA294163A1005458AD /* ProductsEndPoint.swift */,
+				868EF7F429415C70005458AD /* ProductDetailsEndPoint.swift */,
+			);
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868EF7F729415CC1005458AD /* NetworkManager.swift in Sources */,
 				868EF7B629411734005458AD /* ApplicationCoordinator.swift in Sources */,
 				868EF7D529411E85005458AD /* StrongRouter.swift in Sources */,
 				868EF7CB29411A24005458AD /* HomeView.swift in Sources */,
@@ -362,6 +386,7 @@
 				868EF7B929411842005458AD /* ModuleFactory.swift in Sources */,
 				868EF7E029413C26005458AD /* MainCoordinator.swift in Sources */,
 				868EF7DB29413A0F005458AD /* SplashCoordinator.swift in Sources */,
+				868EF7FB294163A1005458AD /* ProductsEndPoint.swift in Sources */,
 				868EF7E62941424F005458AD /* MainModuleFactory.swift in Sources */,
 				868EF7D329411E6D005458AD /* WeakRouter.swift in Sources */,
 				868EF7CE29411C5D005458AD /* ApplicationCoordinatorFactory.swift in Sources */,
@@ -370,6 +395,7 @@
 				868EF7B229411568005458AD /* Coordinator.swift in Sources */,
 				868EF79B29411407005458AD /* AppDelegate.swift in Sources */,
 				868EF7EC29415253005458AD /* ProductDetailsView.swift in Sources */,
+				868EF7FD29416814005458AD /* Product.swift in Sources */,
 				868EF7C5294119ED005458AD /* SplashController.swift in Sources */,
 				868EF7D129411E5A005458AD /* AnyRouter.swift in Sources */,
 				868EF79D29411407005458AD /* SceneDelegate.swift in Sources */,
@@ -378,8 +404,10 @@
 				868EF7C3294119D7005458AD /* SplashView.swift in Sources */,
 				868EF7C129411994005458AD /* SpashViewModel.swift in Sources */,
 				868EF7C729411A00005458AD /* HomeController.swift in Sources */,
+				868EF7F529415C70005458AD /* ProductDetailsEndPoint.swift in Sources */,
 				868EF7BD294118AC005458AD /* CoordinatorFactory.swift in Sources */,
 				868EF7E429413FA2005458AD /* SplashModuleFactory.swift in Sources */,
+				868EF7F929415CE4005458AD /* APITarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
