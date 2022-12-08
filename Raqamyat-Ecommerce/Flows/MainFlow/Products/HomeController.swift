@@ -20,12 +20,20 @@ final class HomeController: UIViewController, HomeControllerProtocol {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Properties ...
     //----------------------------------------------------------------------------------------------------------------
+    enum Section: Hashable {
+        case main
+    }
+    
+    private typealias DataSource = UICollectionViewDiffableDataSource<HomeController.Section, Product>
+    private var dataSource: DataSource!
+
     private var viewModel: HomeViewModelProtocol
-    private var contentView: HomeView
+    private var contentView: ProductsView
+    private var subscriptions = Set<AnyCancellable>()
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Life cycle methods ...
     //----------------------------------------------------------------------------------------------------------------
-    init(viewModel: HomeViewModelProtocol, view: HomeView) {
+    init(viewModel: HomeViewModelProtocol, view: ProductsView) {
         self.contentView = view
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -41,17 +49,33 @@ final class HomeController: UIViewController, HomeControllerProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureCollectionViewDataSource()
         bindViewModelDataStreamsToView()
         bindViewInteractionsDownstreamToViewModel()
     }
 }
 
 extension HomeController {
+    
+    private func configureCollectionViewDataSource() {
+        dataSource = DataSource(collectionView: contentView.collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
+            nil
+        })
+    }
+    
     private func bindViewModelDataStreamsToView() {
-        
+        bindToDataSourceSnapshotDownstream()
     }
     
     private func bindViewInteractionsDownstreamToViewModel() {
         
+    }
+    
+    private func bindToDataSourceSnapshotDownstream() {
+        viewModel.datasourceSnapshotPublisher
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] snapshot in
+                self.dataSource.apply(snapshot)
+            }.store(in: &subscriptions)
     }
 }

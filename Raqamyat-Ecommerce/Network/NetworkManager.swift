@@ -9,33 +9,38 @@ import Foundation
 import Combine
 import Moya
 
-class NetworkManger<Target: APITarget> {
+class NetworkManger {
     
-    private var target: Target
-    private var provider = MoyaProvider<Target>()
+    private static let networkLoggerPlugin: PluginType = NetworkLoggerPlugin(configuration: .init(logOptions: [.requestBody, .successResponseBody]))
+
+    private var provider = MoyaProvider<APIRouter>(plugins: [networkLoggerPlugin])
+    private static let sharedInstance = NetworkManger()
     
-    init(target: Target) {
-        self.target = target
-        
+    // Private Init
+    private init() {}
+    
+    class func shared() -> NetworkManger {
+        return NetworkManger.sharedInstance
     }
     
-    func getProducts() {
-        
+    func getProducts() async -> Result<APIResponse<[Product]>, Error> {
+        await request(target: .products(1))
     }
     
-    private func request<T: Decodable>() async -> Result<T, Error> {
+    private func request<T: Decodable>(target: APIRouter) async -> Result<T, Error> {
         await withCheckedContinuation { continuation in
             provider.request(target) { requestResult in
-//                switch requestResult {
-//                case .success(let response):
-//                    do {
-//                        continuation.resume(returning: try Result.success(response.map(T.self)))
-//                    } catch {
-//                        continuation.resume(returning: Result.failure(error))
-//                    }
-//                case .failure(let error):
-//                    continuation.resume(returning: Result.failure(error))
-//                }
+                switch requestResult {
+                case .success(let response):
+                    do {
+                        continuation.resume(returning: try Result.success(response.map(T.self)))
+                    } catch {
+                        continuation.resume(returning: Result.failure(error))
+                        print(error)
+                    }
+                case .failure(let error):
+                    continuation.resume(returning: Result.failure(error))
+                }
             }
         }
     }

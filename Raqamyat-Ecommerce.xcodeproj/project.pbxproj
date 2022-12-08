@@ -20,8 +20,8 @@
 		868EF7C3294119D7005458AD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7C2294119D7005458AD /* SplashView.swift */; };
 		868EF7C5294119ED005458AD /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7C4294119ED005458AD /* SplashController.swift */; };
 		868EF7C729411A00005458AD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7C629411A00005458AD /* HomeController.swift */; };
-		868EF7C929411A0B005458AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7C829411A0B005458AD /* HomeViewModel.swift */; };
-		868EF7CB29411A24005458AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7CA29411A24005458AD /* HomeView.swift */; };
+		868EF7C929411A0B005458AD /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7C829411A0B005458AD /* ProductsViewModel.swift */; };
+		868EF7CB29411A24005458AD /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7CA29411A24005458AD /* ProductsView.swift */; };
 		868EF7CE29411C5D005458AD /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7CD29411C5D005458AD /* ApplicationCoordinatorFactory.swift */; };
 		868EF7D129411E5A005458AD /* AnyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7D029411E5A005458AD /* AnyRouter.swift */; };
 		868EF7D329411E6D005458AD /* WeakRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7D229411E6D005458AD /* WeakRouter.swift */; };
@@ -41,6 +41,14 @@
 		868EF7F929415CE4005458AD /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7F829415CE4005458AD /* APITarget.swift */; };
 		868EF7FB294163A1005458AD /* ProductsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7FA294163A1005458AD /* ProductsEndPoint.swift */; };
 		868EF7FD29416814005458AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF7FC29416814005458AD /* Product.swift */; };
+		868EF800294168F2005458AD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF7FF294168F2005458AD /* SnapKit */; };
+		868EF802294169DA005458AD /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF801294169DA005458AD /* ProductsRepository.swift */; };
+		868EF8042941716F005458AD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8032941716F005458AD /* APIRouter.swift */; };
+		868EF80729417305005458AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80629417305005458AD /* Constants.swift */; };
+		868EF80B29417AE4005458AD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80A29417AE4005458AD /* ProductCell.swift */; };
+		868EF80E2941DDB9005458AD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80D2941DDB9005458AD /* APIResponse.swift */; };
+		868EF8102941DE08005458AD /* APIResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80F2941DE08005458AD /* APIResponseData.swift */; };
+		868EF8122941DE4D005458AD /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8112941DE4D005458AD /* Meta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +67,8 @@
 		868EF7C2294119D7005458AD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		868EF7C4294119ED005458AD /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		868EF7C629411A00005458AD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		868EF7C829411A0B005458AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		868EF7CA29411A24005458AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		868EF7C829411A0B005458AD /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		868EF7CA29411A24005458AD /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		868EF7CD29411C5D005458AD /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		868EF7D029411E5A005458AD /* AnyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRouter.swift; sourceTree = "<group>"; };
 		868EF7D229411E6D005458AD /* WeakRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRouter.swift; sourceTree = "<group>"; };
@@ -78,6 +86,13 @@
 		868EF7F829415CE4005458AD /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
 		868EF7FA294163A1005458AD /* ProductsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndPoint.swift; sourceTree = "<group>"; };
 		868EF7FC29416814005458AD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		868EF801294169DA005458AD /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		868EF8032941716F005458AD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		868EF80629417305005458AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		868EF80A29417AE4005458AD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		868EF80D2941DDB9005458AD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		868EF80F2941DE08005458AD /* APIResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseData.swift; sourceTree = "<group>"; };
+		868EF8112941DE4D005458AD /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868EF800294168F2005458AD /* SnapKit in Frameworks */,
 				868EF7F229415882005458AD /* Moya in Frameworks */,
 				868EF7F029415882005458AD /* CombineMoya in Frameworks */,
 			);
@@ -112,6 +128,8 @@
 		868EF79929411407005458AD /* Raqamyat-Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
+				868EF80829417AC7005458AD /* CustomViews */,
+				868EF805294172F6005458AD /* Utilities */,
 				868EF7AE29411467005458AD /* Shared */,
 				868EF7B02941155F005458AD /* BaseCoordinator */,
 				868EF7ED2941575E005458AD /* Network */,
@@ -186,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				868EF7DE29413BD4005458AD /* Coordinator */,
-				868EF7E129413E02005458AD /* Home */,
+				868EF7E129413E02005458AD /* Products */,
 				868EF7E229413E0C005458AD /* ProuductDetails */,
 			);
 			path = MainFlow;
@@ -231,6 +249,7 @@
 		868EF7D929412140005458AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				868EF80C2941DDAB005458AD /* APIMain */,
 				868EF7FC29416814005458AD /* Product.swift */,
 			);
 			path = Models;
@@ -262,14 +281,15 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		868EF7E129413E02005458AD /* Home */ = {
+		868EF7E129413E02005458AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				868EF7C829411A0B005458AD /* HomeViewModel.swift */,
+				868EF801294169DA005458AD /* ProductsRepository.swift */,
+				868EF7C829411A0B005458AD /* ProductsViewModel.swift */,
 				868EF7C629411A00005458AD /* HomeController.swift */,
-				868EF7CA29411A24005458AD /* HomeView.swift */,
+				868EF7CA29411A24005458AD /* ProductsView.swift */,
 			);
-			path = Home;
+			path = Products;
 			sourceTree = "<group>";
 		};
 		868EF7E229413E0C005458AD /* ProuductDetails */ = {
@@ -286,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				868EF7F629415CC1005458AD /* NetworkManager.swift */,
+				868EF8032941716F005458AD /* APIRouter.swift */,
 				868EF7F829415CE4005458AD /* APITarget.swift */,
 				868EF7F329415C61005458AD /* EndPoints */,
 			);
@@ -299,6 +320,40 @@
 				868EF7F429415C70005458AD /* ProductDetailsEndPoint.swift */,
 			);
 			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		868EF805294172F6005458AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				868EF80629417305005458AD /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		868EF80829417AC7005458AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				868EF80929417ADE005458AD /* Cells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		868EF80929417ADE005458AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				868EF80A29417AE4005458AD /* ProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		868EF80C2941DDAB005458AD /* APIMain */ = {
+			isa = PBXGroup;
+			children = (
+				868EF80D2941DDB9005458AD /* APIResponse.swift */,
+				868EF80F2941DE08005458AD /* APIResponseData.swift */,
+				868EF8112941DE4D005458AD /* Meta.swift */,
+			);
+			path = APIMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +375,7 @@
 			packageProductDependencies = (
 				868EF7EF29415882005458AD /* CombineMoya */,
 				868EF7F129415882005458AD /* Moya */,
+				868EF7FF294168F2005458AD /* SnapKit */,
 			);
 			productName = "Raqamyat-Ecommerce";
 			productReference = 868EF79729411407005458AD /* Raqamyat-Ecommerce.app */;
@@ -351,6 +407,7 @@
 			mainGroup = 868EF78E29411407005458AD;
 			packageReferences = (
 				868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */,
+				868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 868EF79829411407005458AD /* Products */;
 			projectDirPath = "";
@@ -381,12 +438,15 @@
 				868EF7F729415CC1005458AD /* NetworkManager.swift in Sources */,
 				868EF7B629411734005458AD /* ApplicationCoordinator.swift in Sources */,
 				868EF7D529411E85005458AD /* StrongRouter.swift in Sources */,
-				868EF7CB29411A24005458AD /* HomeView.swift in Sources */,
+				868EF7CB29411A24005458AD /* ProductsView.swift in Sources */,
 				868EF7B4294115A5005458AD /* BaseCoordinator.swift in Sources */,
+				868EF8042941716F005458AD /* APIRouter.swift in Sources */,
 				868EF7B929411842005458AD /* ModuleFactory.swift in Sources */,
 				868EF7E029413C26005458AD /* MainCoordinator.swift in Sources */,
 				868EF7DB29413A0F005458AD /* SplashCoordinator.swift in Sources */,
+				868EF802294169DA005458AD /* ProductsRepository.swift in Sources */,
 				868EF7FB294163A1005458AD /* ProductsEndPoint.swift in Sources */,
+				868EF80B29417AE4005458AD /* ProductCell.swift in Sources */,
 				868EF7E62941424F005458AD /* MainModuleFactory.swift in Sources */,
 				868EF7D329411E6D005458AD /* WeakRouter.swift in Sources */,
 				868EF7CE29411C5D005458AD /* ApplicationCoordinatorFactory.swift in Sources */,
@@ -399,12 +459,16 @@
 				868EF7C5294119ED005458AD /* SplashController.swift in Sources */,
 				868EF7D129411E5A005458AD /* AnyRouter.swift in Sources */,
 				868EF79D29411407005458AD /* SceneDelegate.swift in Sources */,
-				868EF7C929411A0B005458AD /* HomeViewModel.swift in Sources */,
+				868EF80729417305005458AD /* Constants.swift in Sources */,
+				868EF7C929411A0B005458AD /* ProductsViewModel.swift in Sources */,
 				868EF7E8294150E5005458AD /* ProductDetailsController.swift in Sources */,
+				868EF8102941DE08005458AD /* APIResponseData.swift in Sources */,
 				868EF7C3294119D7005458AD /* SplashView.swift in Sources */,
 				868EF7C129411994005458AD /* SpashViewModel.swift in Sources */,
 				868EF7C729411A00005458AD /* HomeController.swift in Sources */,
+				868EF80E2941DDB9005458AD /* APIResponse.swift in Sources */,
 				868EF7F529415C70005458AD /* ProductDetailsEndPoint.swift in Sources */,
+				868EF8122941DE4D005458AD /* Meta.swift in Sources */,
 				868EF7BD294118AC005458AD /* CoordinatorFactory.swift in Sources */,
 				868EF7E429413FA2005458AD /* SplashModuleFactory.swift in Sources */,
 				868EF7F929415CE4005458AD /* APITarget.swift in Sources */,
@@ -631,6 +695,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -643,6 +715,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		868EF7FF294168F2005458AD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

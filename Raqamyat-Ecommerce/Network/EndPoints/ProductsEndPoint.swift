@@ -6,19 +6,23 @@
 //
 
 import Foundation
+import Moya
+
 struct ProductsEndPoint: APITarget {
-   
-   var path: String
-   
-   var method: Moya.Method {
-       return .get
-   }
-   
-   var task: Moya.Task {
-       return .requestPlain
-   }
-   
-   var headers: [String : String]? {
-       return nil
-   }
+    
+    var paging: Int?
+    
+    var path: String
+    
+    var method: Moya.Method {
+        return .get
+    }
+    
+    var task: Moya.Task {
+        return .requestParameters(parameters: ["": paging], encoding: URLEncoding.default)
+    }
+    
+    var headers: [String : String]? {
+        return nil
+    }
 }

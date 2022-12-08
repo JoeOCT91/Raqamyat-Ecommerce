@@ -15,8 +15,9 @@ protocol MainModuleFactory: AnyObject {
 extension ModuleFactory: MainModuleFactory {
     
     func createHomeOutput() -> HomeControllerProtocol {
-        let view = HomeView()
-        let viewModel = HomeViewModel()
+        let view = ProductsView()
+        let repository = ProductsRepository()
+        let viewModel = HomeViewModel(repository: repository)
         let controller = HomeController(viewModel: viewModel, view: view)
         return controller
     }
