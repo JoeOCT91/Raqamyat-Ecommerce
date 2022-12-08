@@ -22,14 +22,19 @@ class ProductsView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = .red
+        setupViewsLayoutConstrains()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func 
+    private func setupViewsLayoutConstrains() {
+        addSubview(collectionView)
+        collectionView.snp.makeConstraints { make in
+            make.edges.equalTo(safeAreaLayoutGuide)
+        }
+    }
     
     typealias Layout = UICollectionViewCompositionalLayout
     private func generateCollectionViewLayout() -> Layout {
@@ -45,4 +50,13 @@ class ProductsView: UIView {
             return section
         })
     }
+}
+
+class ProductsCollectionViewHeader: UIView {
+
+    
+}
+
+class ProductsCollectionViewHeaderItem: UIView {
+     
 }

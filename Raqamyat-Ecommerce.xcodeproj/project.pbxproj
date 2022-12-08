@@ -49,6 +49,8 @@
 		868EF80E2941DDB9005458AD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80D2941DDB9005458AD /* APIResponse.swift */; };
 		868EF8102941DE08005458AD /* APIResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF80F2941DE08005458AD /* APIResponseData.swift */; };
 		868EF8122941DE4D005458AD /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF8112941DE4D005458AD /* Meta.swift */; };
+		868EF8152941E6D6005458AD /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF8142941E6D6005458AD /* CombineCocoa */; };
+		868EF8182941E8EE005458AD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 868EF8172941E8EE005458AD /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +104,9 @@
 			files = (
 				868EF800294168F2005458AD /* SnapKit in Frameworks */,
 				868EF7F229415882005458AD /* Moya in Frameworks */,
+				868EF8152941E6D6005458AD /* CombineCocoa in Frameworks */,
 				868EF7F029415882005458AD /* CombineMoya in Frameworks */,
+				868EF8182941E8EE005458AD /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +380,8 @@
 				868EF7EF29415882005458AD /* CombineMoya */,
 				868EF7F129415882005458AD /* Moya */,
 				868EF7FF294168F2005458AD /* SnapKit */,
+				868EF8142941E6D6005458AD /* CombineCocoa */,
+				868EF8172941E8EE005458AD /* Kingfisher */,
 			);
 			productName = "Raqamyat-Ecommerce";
 			productReference = 868EF79729411407005458AD /* Raqamyat-Ecommerce.app */;
@@ -408,6 +414,8 @@
 			packageReferences = (
 				868EF7EE29415882005458AD /* XCRemoteSwiftPackageReference "Moya" */,
 				868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				868EF8132941E6D5005458AD /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				868EF8162941E8EE005458AD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 868EF79829411407005458AD /* Products */;
 			projectDirPath = "";
@@ -703,6 +711,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		868EF8132941E6D5005458AD /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		868EF8162941E8EE005458AD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -720,6 +744,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 868EF7FE294168F2005458AD /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		868EF8142941E6D6005458AD /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF8132941E6D5005458AD /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		868EF8172941E8EE005458AD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868EF8162941E8EE005458AD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

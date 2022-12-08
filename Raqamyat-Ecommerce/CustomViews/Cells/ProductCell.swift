@@ -6,8 +6,22 @@
 //
 
 import UIKit
+import Combine
+
 
 class ProductCell: UICollectionViewCell {
+    
+    var tapSubscriptions: AnyCancellable?
+    var tapPublisher: AnyPublisher<Void, Never> {
+        return tapGesture.tapPublisher
+            .flatMap({ _ in CurrentValueSubject<Void,Never>(()) })
+            .eraseToAnyPublisher()
+    }
+    
+    private var tapGesture: UITapGestureRecognizer = {
+        let tapGesture = UITapGestureRecognizer()
+        return tapGesture
+    }()
     
     private lazy var containerStack: UIStackView = {
         let arrangedViews = [productImage, productNameLabel, productPriceLabel]
@@ -34,6 +48,10 @@ class ProductCell: UICollectionViewCell {
         super.init(frame: frame)
     }
     
+    override func prepareForReuse() {
+        self.tapSubscriptions?.cancel()
+    }
+    
     func configureCell(with product: Product) {
         
     }
@@ -44,6 +62,7 @@ class ProductCell: UICollectionViewCell {
     
     private func setupViewsLayoutConstrains() {
         contentView.addSubview(containerStack)
+        contentView.
         
     }
 }

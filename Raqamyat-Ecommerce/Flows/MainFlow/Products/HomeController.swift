@@ -58,8 +58,13 @@ final class HomeController: UIViewController, HomeControllerProtocol {
 extension HomeController {
     
     private func configureCollectionViewDataSource() {
-        dataSource = DataSource(collectionView: contentView.collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
-            nil
+        dataSource = DataSource(collectionView: contentView.collectionView, cellProvider: {  [unowned self] collectionView, indexPath, itemIdentifier in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cells.productCell, for: indexPath) as? ProductCell
+            cell?.tapPublisher.sink(receiveValue: { [unowned self] in
+                self.onProductTapPublisher.send(itemIdentifier.id)
+            })
+            cell?.configureCell(with: itemIdentifier)
+            return cell
         })
     }
     
