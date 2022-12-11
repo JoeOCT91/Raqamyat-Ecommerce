@@ -9,5 +9,5 @@ import Foundation
 
 protocol ApplicationCoordinatorFactory {
     func createSplashCoordinator(router: AnyRouter) -> SplashCoordinatorOutput
-    func createMainCoordinator(router: AnyRouter) -> MainCoordinatorOutput
+    func createMainCoordinator(router: AnyRouter) -> ProductsCoordinatorOutput
 }

@@ -1,24 +1,24 @@
 xcassets:
-  inputs: Raqamyat-Ecommerce/Resources/Assets/Assets.xcassets
+  inputs: Raqamyat-Ecommerce/Common/Resources/Assets/Assets.xcassets
   outputs:
     templateName: swift5
-    output: Raqamyat-Ecommerce/Resources/Assets/AssetsManager.swift
+    output: Raqamyat-Ecommerce/Common/Resources/Assets/AssetsManager.swift
 
 strings:
-  inputs: Raqamyat-Ecommerce/Resources/Strings/Localizable.strings
+  inputs: Raqamyat-Ecommerce/Common/Resources/Strings/Localizable.strings
   outputs:
     templateName: structured-swift5
-    output: Raqamyat-Ecommerce/Resources/Strings/Strings.swift
+    output: Raqamyat-Ecommerce/Common/Resources/Strings/Strings.swift
 
 fonts:
   inputs:
-    - Raqamyat-Ecommerce/Resources/Fonts
+    - Raqamyat-Ecommerce/Common/Resources/Fonts
   outputs:
     templateName: swift5
-    output: Raqamyat-Ecommerce/Resources/Fonts/FontsManager.swift
+    output: Raqamyat-Ecommerce/Common/Resources/Fonts/FontsManager.swift
 
 colors:
-  inputs: Raqamyat-Ecommerce//Resources/Colors/Colors.txt
+  inputs: Raqamyat-Ecommerce/Common/Resources/Colors/Colors.txt
   outputs:
     templateName: swift5
-    output: Raqamyat-Ecommerce/Resources/Colors/ColorsManager.swift
+    output: Raqamyat-Ecommerce/Common/Resources/Colors/ColorsManager.swift

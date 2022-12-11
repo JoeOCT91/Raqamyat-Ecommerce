@@ -55,6 +55,7 @@ extension SceneDelegate {
         return window
     }
     
+    
     private func createApplicationCoordinator() -> AnyCoordinator {
         let router = WeakRouter(rootController: rootController)
         let coordinatorsFactory = CoordinatorFactory()

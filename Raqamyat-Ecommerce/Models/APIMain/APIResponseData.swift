@@ -10,5 +10,5 @@ import Foundation
 // MARK: - Item
 struct APIResponseData<T: Codable>: Codable {
     let data: T
-    let meta: Meta
+    let meta: Meta?
 }

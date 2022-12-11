@@ -9,7 +9,6 @@ import UIKit
 import Combine
 import Kingfisher
 
-
 class ProductCell: UICollectionViewCell {
     
     var tapSubscriptions: AnyCancellable?
@@ -30,6 +29,22 @@ class ProductCell: UICollectionViewCell {
         view.layerBorderWidth = 1
         view.layerCornerRadius = 8
         return view
+    }()
+    
+    private var discountView: UIView = {
+        let  view = UIView(frame: .zero)
+        return view
+    }()
+    
+    private let discountBackGroundImage: UIImageView = {
+        let imageView = UIImageView(image: Asset.discountRect.image)
+        return imageView
+    }()
+    private let discountValueLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = FontFamily.Lato.regular.font(size: 11)
+        label.textColor = ColorName.white.color
+        return label
     }()
     
     private lazy var containerStack: UIStackView = {
@@ -68,6 +83,7 @@ class ProductCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addGestureRecognizer(tapGesture)
         setupViewsLayoutConstrains()
     }
     
@@ -75,12 +91,22 @@ class ProductCell: UICollectionViewCell {
         self.tapSubscriptions?.cancel()
     }
     
-    func configureCell(with product: Product) {
+    func configureCell(with product: any AnyProduct) {
         productNameLabel.text = product.name
-        productPriceLabel.text = product.price + "" + L10n.egyptianPound
-        
-        guard let productImageURL = URL(string: product.image) else { return }
-        productImage.kf.setImage(with: productImageURL)
+        productPriceLabel.text = product.price + L10n.egyptianPound
+        discountValueLabel.text = (product.percentage ?? "0") + "%" + L10n.percentageOff
+        discountView.isHidden = !product.isHasDiscount
+        setProductImage(using: product.image)
+    }
+    
+    private func setProductImage(using urlString: String) {
+        guard let productImageURL = URL(string: urlString) else { return }
+        let resizingImageProcessor = ResizingImageProcessor(referenceSize: CGSize(width: contentView.size.width,
+                                                                                   height: contentView.size.width * 1.20))
+        productImage.kf.setImage(with: productImageURL, options: [.processor(resizingImageProcessor),
+                                                                  .transition(.fade(0.4)),
+                                                                  .loadDiskFileSynchronously,
+                                                                  .cacheOriginalImage])
     }
     
     required init?(coder: NSCoder) {
@@ -97,14 +123,26 @@ class ProductCell: UICollectionViewCell {
             let innerInsetValue = UIEdgeInsets(top: 9, left: 9, bottom: 14, right: 9)
             make.edges.equalToSuperview().inset(innerInsetValue)
         }
-        
+        contentContainerView.addSubview(discountView)
+        discountView.snp.makeConstraints { make in
+            let insets = NSDirectionalEdgeInsets(top: 4, leading: 16, bottom: 0, trailing: 0)
+            make.top.leading.equalToSuperview().inset(insets)
+        }
+        discountView.addSubview(discountBackGroundImage)
+        discountBackGroundImage.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        discountView.addSubview(discountValueLabel)
+        discountValueLabel.snp.makeConstraints { make in
+            let insets = NSDirectionalEdgeInsets(top: 0, leading: 13, bottom: 0, trailing: 0)
+            make.edges.equalToSuperview().inset(insets)
+        }
         contentContainerView.addSubview(rateButton)
         rateButton.snp.makeConstraints { make in
             make.trailing.top.equalTo(productImage)
         }
-        
         productImage.snp.makeConstraints { make in
-            make.height.equalTo(productImage.snp.width).multipliedBy(1.20)
+            make.height.equalTo(productImage.snp.width).multipliedBy(1.20).priority(.medium)
         }
     }
 }

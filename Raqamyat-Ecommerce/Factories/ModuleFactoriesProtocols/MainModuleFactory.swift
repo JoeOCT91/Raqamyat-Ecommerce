@@ -9,22 +9,25 @@ import Foundation
 
 protocol MainModuleFactory: AnyObject {
     func createHomeOutput() -> HomeControllerProtocol
-    func createProductDetailsHandler(forProduct withId: Int) -> ProductDetailsControllerProtocol
+    func createProductDetailsHandler(for product: Product) -> ProductDetailsControllerProtocol & Presentable
 }
 
 extension ModuleFactory: MainModuleFactory {
     
     func createHomeOutput() -> HomeControllerProtocol {
         let view = ProductsView()
-        let repository = ProductsRepository()
+        let dataDestination = APIManager<ProductsAPIRouter>()
+        let repository = ProductsRepository(destination: dataDestination)
         let viewModel = HomeViewModel(repository: repository)
-        let controller = HomeController(viewModel: viewModel, view: view)
+        let controller = ProductsController(viewModel: viewModel, view: view)
         return controller
     }
     
-    func createProductDetailsHandler(forProduct withId: Int) -> ProductDetailsControllerProtocol {
-        let view = ProductDetailsView()
-        let viewModel = ProductDetailsViewModel()
+    func createProductDetailsHandler(for product: Product) -> ProductDetailsControllerProtocol & Presentable {
+        let view = ProductDetailsView(product: product)
+        let dataDestination = APIManager<ProductsAPIRouter>()
+        let repository = ProductDetailsRepository(destination: dataDestination)
+        let viewModel = ProductDetailsViewModel(repository: repository, product: product)
         let controller = ProductDetailsController(viewModel: viewModel, view: view)
         return controller
     }

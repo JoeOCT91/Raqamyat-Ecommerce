@@ -1,0 +1,21 @@
+"EgyptianPound" = " EGP";
+
+// MARk: - Products ....
+"filterBy" = "Filter by";
+"sortBy" = "Sort by";
+"result" = "0 Result";
+"percentageOff" = "  off";
+
+// MARK: - Product details ...
+"selectSize" = "Select your Size";
+"sizeGuide" = "Size Guide";
+
+"selectColor" = "Select Color";
+"reviews" = "REVIEWS";
+"allReviews" = "All Reviews";
+"description" = "DESCRIPTION";
+"addToCart" = "Add to Cart";
+
+"suggestedProductsHeaderTitle" = "YOU MAY ALSO LIKE";
+
+"by" = "by: ";

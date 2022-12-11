@@ -19,9 +19,10 @@ extension CoordinatorFactory: ApplicationCoordinatorFactory {
         return coordinator
     }
     
-    func createMainCoordinator(router: AnyRouter) -> MainCoordinatorOutput {
+    func createMainCoordinator(router: AnyRouter) -> ProductsCoordinatorOutput {
         let mainModuleFactory = ModuleFactory()
-        let coordinator = MainCoordinator(router: router, factory: mainModuleFactory)
+        let coordinator = ProductsCoordinator(router: router, factory: mainModuleFactory)
         return coordinator
     }
 }
+

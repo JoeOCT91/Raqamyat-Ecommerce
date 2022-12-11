@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  ProductsCoordinator.swift
 //  Raqamyat-Ecommerce
 //
 //  Created by Yousef Mohamed on 07/12/2022.
@@ -8,11 +8,11 @@
 import Foundation
 import Combine
 
-protocol MainCoordinatorOutput: AnyCoordinator {
-    
+protocol ProductsCoordinatorOutput: AnyCoordinator {
+    var finishFlowPublisher: PassthroughSubject<Void, Never> { get }
 }
 
-final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
+final class ProductsCoordinator: BaseCoordinator, ProductsCoordinatorOutput {
     
     var finishFlowPublisher = PassthroughSubject<Void, Never>()
     
@@ -25,19 +25,29 @@ final class MainCoordinator: BaseCoordinator, MainCoordinatorOutput {
     }
     
     override func start() {
-        self.showHome()
+        self.showProducts()
     }
     
-    private func showHome() {
-        let homeOutput = factory.createHomeOutput()
-        homeOutput.onProductTapPublisher.sink { [unowned self] tapedProductId in
-            self.pushProductDetails(forProduct: tapedProductId)
+    private func showProducts() {
+        let productsOutput = factory.createHomeOutput()
+        productsOutput.onProductTapPublisher.sink { [unowned self] tapedProduct in
+            self.presentProductDetails(for: tapedProduct)
         }.store(in: &subscriptions)
-        router.setRootModule(homeOutput)
+        productsOutput.onCartTapPublisher.sink { [unowned self] in
+            self.presentCart()
+        }.store(in: &subscriptions)
+        router.setRootModule(productsOutput)
     }
     
-    private func pushProductDetails(forProduct withId: Int) {
-        let productDetailsHandler = factory.createProductDetailsHandler(forProduct: withId)
-        router.push(productDetailsHandler)
+    private func presentProductDetails(for product: Product) {
+        let productDetailsHandler = factory.createProductDetailsHandler(for: product)
+        productDetailsHandler.onFinishFlowPublisher.sink { [unowned self] in
+            self.router.dismissModule()
+        }.store(in: &subscriptions)
+        router.present(productDetailsHandler)
+    }
+    
+    private func presentCart() {
+        
     }
 }
