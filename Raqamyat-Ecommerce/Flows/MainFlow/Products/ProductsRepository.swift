@@ -12,7 +12,8 @@ protocol ProductsRepositoryProtocol: AnyRepository {
     var productsListPublisher: AnyPublisher<[Product], Never> { get }
     var repositoryDataListPublisher: AnyPublisher<APIResponseData<[Product]>, Never> { get }
     
-    func fetchProducts(in page: Int)
+    func fetchProducts(inPage page: Int, fromCategory category: Int?)
+    
 }
 
 class ProductsRepository: Repository, ProductsRepositoryProtocol {
@@ -34,12 +35,13 @@ class ProductsRepository: Repository, ProductsRepositoryProtocol {
     init(destination: ProductsDestination ) {
         self.destination = destination
         super.init()
-        fetchProducts()
     }
+
     
-    func fetchProducts(in page: Int = 1) {
+    func fetchProducts(inPage page: Int, fromCategory category: Int?) {
         Task {
-            let dataResponse = await destination.getProductsPaging(in: page, from: 5)
+            repositoryState = .loading
+            let dataResponse = await destination.getProductsPaging(in: page, from: category)
             repositoryState = .idle
             switch dataResponse {
             case .success(let success):

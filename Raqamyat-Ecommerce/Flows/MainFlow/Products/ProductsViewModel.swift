@@ -32,6 +32,7 @@ class HomeViewModel: ViewModel, ProductsViewModelProtocol {
         super.init(repository: repository)
         setInitialDataSourceSnapshot()
         bindToProductsListDownStream()
+        repository.fetchProducts(inPage: 1, fromCategory: 5)
     }
     
     private func setInitialDataSourceSnapshot() {
@@ -63,6 +64,6 @@ class HomeViewModel: ViewModel, ProductsViewModelProtocol {
             self.noMoreProductsPublisher.send()
             return
         }
-        repository.fetchProducts(in: pagination.currentPage + 1)
+        repository.fetchProducts(inPage: pagination.currentPage + 1, fromCategory: 5)
     }
 }

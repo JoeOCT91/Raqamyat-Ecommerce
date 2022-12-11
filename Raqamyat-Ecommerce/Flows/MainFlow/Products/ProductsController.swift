@@ -59,12 +59,11 @@ final class ProductsController: ViewController, HomeControllerProtocol {
     }
     
     override func showLoader() {
-        
+        super.showLoader()
     }
     
     override func hideLoader() {
         super.hideLoader()
-        print("hideLoader")
         contentView.collectionView.mj_footer?.endRefreshing()
     }
     

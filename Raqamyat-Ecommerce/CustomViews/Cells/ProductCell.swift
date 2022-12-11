@@ -97,6 +97,7 @@ class ProductCell: UICollectionViewCell {
         productPriceLabel.text = product.price + L10n.egyptianPound
         discountValueLabel.text = (product.percentage ?? "0") + "%" + L10n.percentageOff
         discountView.isHidden = !product.isHasDiscount
+        rateButton.isSelected = product.isFav
         setProductImage(using: product.image)
     }
     
