@@ -67,10 +67,25 @@ final class ProductsController: ViewController, HomeControllerProtocol {
         contentView.collectionView.mj_footer?.endRefreshing()
     }
     
+    // this view most be removed and replaced with a class of type badge button >> to be refactor
     private func setupNavigationBarCartButton() {
         let button = UIButton(frame: .zero)
         button.setImage(Asset.navigationBarCart.image, for: .normal)
         let customView = UIBarButtonItem(customView: button)
+        
+        let badgeSize: CGFloat = 22
+        let badgeView = UILabel(text: "0")
+        badgeView.textColor = ColorName.white.color
+        badgeView.backgroundColor = ColorName.black.color
+        badgeView.textAlignment = .center
+        
+        button.addSubview(badgeView)
+        badgeView.snp.makeConstraints { make in
+            make.width.height.equalTo(badgeSize)
+            make.top.equalTo(button.snp.top).inset(6)
+            make.trailing.equalTo(button.snp.trailing).inset(3)
+        }
+        badgeView.layerCornerRadius = badgeSize / 2
         navigationItem.rightBarButtonItem = customView
         button.tapPublisher
             .debounce(for: .milliseconds(200), scheduler: RunLoop.main)
