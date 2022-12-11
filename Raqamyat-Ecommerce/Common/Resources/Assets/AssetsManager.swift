@@ -36,6 +36,7 @@ internal enum Asset {
   internal static let navigationBackIcon = ImageAsset(name: "navigationBackIcon")
   internal static let navigationBarCart = ImageAsset(name: "navigationBarCart")
   internal static let rateEmpty = ImageAsset(name: "rateEmpty")
+  internal static let rateFill = ImageAsset(name: "rateFill")
   internal static let roundCornersBackIcon = ImageAsset(name: "roundCornersBackIcon")
   internal static let starFill = ImageAsset(name: "starFill")
   internal static let startEmpty = ImageAsset(name: "startEmpty")

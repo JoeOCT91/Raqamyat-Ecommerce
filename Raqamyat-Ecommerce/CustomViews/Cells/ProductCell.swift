@@ -78,6 +78,7 @@ class ProductCell: UICollectionViewCell {
     private let rateButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.setImage(Asset.rateEmpty.image, for: .normal)
+        button.setImage(Asset.rateFill.image, for: .selected)
         return button
     }()
     
