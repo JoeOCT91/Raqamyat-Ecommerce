@@ -54,6 +54,13 @@ internal enum FontFamily {
     internal static let thinItalic = FontConvertible(name: "Poppins-ThinItalic", family: "Poppins", path: "Poppins-ThinItalic.ttf")
     internal static let all: [FontConvertible] = [black, blackItalic, bold, boldItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, italic, light, lightItalic, medium, mediumItalic, regular, semiBold, semiBoldItalic, thin, thinItalic]
   }
+  internal enum SegoeUI {
+    internal static let regular = FontConvertible(name: "SegoeUI", family: "Segoe UI", path: "Segoe UI Regular.ttf")
+    internal static let bold = FontConvertible(name: "SegoeUI-Bold", family: "Segoe UI", path: "Segoe UI Bold.ttf")
+    internal static let boldItalic = FontConvertible(name: "SegoeUI-BoldItalic", family: "Segoe UI", path: "Segoe UI Bold Italic.ttf")
+    internal static let italic = FontConvertible(name: "SegoeUI-Italic", family: "Segoe UI", path: "Segoe UI Italic.ttf")
+    internal static let all: [FontConvertible] = [regular, bold, boldItalic, italic]
+  }
   internal enum TTNormsPro {
     internal static let black = FontConvertible(name: "TTNormsPro-Black", family: "TT Norms Pro", path: "TT Norms Pro Black.otf")
     internal static let blackItalic = FontConvertible(name: "TTNormsPro-BlackItalic", family: "TT Norms Pro", path: "TT Norms Pro Black Italic.otf")
@@ -75,7 +82,7 @@ internal enum FontFamily {
     internal static let thinItalic = FontConvertible(name: "TTNormsPro-ThinItalic", family: "TT Norms Pro", path: "TT Norms Pro Thin Italic.otf")
     internal static let all: [FontConvertible] = [black, blackItalic, bold, boldItalic, extraBlack, extraBlackItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, italic, light, lightItalic, medium, mediumItalic, regular, thin, thinItalic]
   }
-  internal static let allCustomFonts: [FontConvertible] = [Lato.all, Poppins.all, TTNormsPro.all].flatMap { $0 }
+  internal static let allCustomFonts: [FontConvertible] = [Lato.all, Poppins.all, SegoeUI.all, TTNormsPro.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

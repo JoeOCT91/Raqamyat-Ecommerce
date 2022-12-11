@@ -17,6 +17,12 @@
 		865F8AA3294567C700B46888 /* ProductColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F8AA2294567C700B46888 /* ProductColor.swift */; };
 		865F8AA5294567F300B46888 /* ProductSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F8AA4294567F300B46888 /* ProductSize.swift */; };
 		865F8AA72945681F00B46888 /* ProductReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F8AA62945681F00B46888 /* ProductReview.swift */; };
+		865F8AAA2945C71C00B46888 /* BadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865F8AA92945C71C00B46888 /* BadgeButton.swift */; };
+		865F8AB12945C9CC00B46888 /* Segoe UI Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865F8AAC2945C9CC00B46888 /* Segoe UI Italic.ttf */; };
+		865F8AB22945C9CC00B46888 /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865F8AAD2945C9CC00B46888 /* Segoe UI.ttf */; };
+		865F8AB32945C9CC00B46888 /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865F8AAE2945C9CC00B46888 /* Segoe UI Bold.ttf */; };
+		865F8AB42945C9CC00B46888 /* Segoe UI Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865F8AAF2945C9CC00B46888 /* Segoe UI Regular.ttf */; };
+		865F8AB52945C9CC00B46888 /* Segoe UI Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865F8AB02945C9CC00B46888 /* Segoe UI Bold Italic.ttf */; };
 		868EF79B29411407005458AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF79A29411407005458AD /* AppDelegate.swift */; };
 		868EF79D29411407005458AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868EF79C29411407005458AD /* SceneDelegate.swift */; };
 		868EF7A429411408005458AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868EF7A329411408005458AD /* Assets.xcassets */; };
@@ -136,6 +142,12 @@
 		865F8AA2294567C700B46888 /* ProductColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductColor.swift; sourceTree = "<group>"; };
 		865F8AA4294567F300B46888 /* ProductSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSize.swift; sourceTree = "<group>"; };
 		865F8AA62945681F00B46888 /* ProductReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReview.swift; sourceTree = "<group>"; };
+		865F8AA92945C71C00B46888 /* BadgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeButton.swift; sourceTree = "<group>"; };
+		865F8AAC2945C9CC00B46888 /* Segoe UI Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Italic.ttf"; sourceTree = "<group>"; };
+		865F8AAD2945C9CC00B46888 /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
+		865F8AAE2945C9CC00B46888 /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
+		865F8AAF2945C9CC00B46888 /* Segoe UI Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Regular.ttf"; sourceTree = "<group>"; };
+		865F8AB02945C9CC00B46888 /* Segoe UI Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold Italic.ttf"; sourceTree = "<group>"; };
 		868EF79729411407005458AD /* Raqamyat-Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raqamyat-Ecommerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		868EF79A29411407005458AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868EF79C29411407005458AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +328,26 @@
 				865F8A9D294559E300B46888 /* ProductsDestination.swift */,
 			);
 			path = Destinations;
+			sourceTree = "<group>";
+		};
+		865F8AA82945C70400B46888 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				865F8AA92945C71C00B46888 /* BadgeButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		865F8AAB2945C9CC00B46888 /* SegoeUI */ = {
+			isa = PBXGroup;
+			children = (
+				865F8AAC2945C9CC00B46888 /* Segoe UI Italic.ttf */,
+				865F8AAD2945C9CC00B46888 /* Segoe UI.ttf */,
+				865F8AAE2945C9CC00B46888 /* Segoe UI Bold.ttf */,
+				865F8AAF2945C9CC00B46888 /* Segoe UI Regular.ttf */,
+				865F8AB02945C9CC00B46888 /* Segoe UI Bold Italic.ttf */,
+			);
+			path = SegoeUI;
 			sourceTree = "<group>";
 		};
 		868EF78E29411407005458AD = {
@@ -543,6 +575,7 @@
 		868EF80829417AC7005458AD /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				865F8AA82945C70400B46888 /* Buttons */,
 				868EF88C2943BA88005458AD /* ReusableView */,
 				868EF80929417ADE005458AD /* Cells */,
 			);
@@ -592,6 +625,7 @@
 		868EF81D2941ED20005458AD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				865F8AAB2945C9CC00B46888 /* SegoeUI */,
 				868EF8A42944FCBB005458AD /* Lato */,
 				868EF8512941F999005458AD /* ttNormsProCufonfonts */,
 				868EF8252941EEA7005458AD /* Poppins */,
@@ -776,6 +810,7 @@
 				868EF83A2941EEA7005458AD /* Poppins-ExtraLightItalic.ttf in Resources */,
 				868EF8452941EEA7005458AD /* Poppins-Black.ttf in Resources */,
 				868EF8B82944FCBB005458AD /* Lato-BoldItalic.ttf in Resources */,
+				865F8AB52945C9CC00B46888 /* Segoe UI Bold Italic.ttf in Resources */,
 				868EF8B32944FCBB005458AD /* Lato-Bold.ttf in Resources */,
 				868EF8432941EEA7005458AD /* Poppins-LightItalic.ttf in Resources */,
 				868EF8752941F999005458AD /* TT Norms Pro Thin.otf in Resources */,
@@ -784,6 +819,7 @@
 				868EF8692941F999005458AD /* TT Norms Pro ExtraBlack Italic.otf in Resources */,
 				868EF8642941F999005458AD /* TT Norms Pro Bold Italic.otf in Resources */,
 				868EF8412941EEA7005458AD /* Poppins-BlackItalic.ttf in Resources */,
+				865F8AB42945C9CC00B46888 /* Segoe UI Regular.ttf in Resources */,
 				868EF8B62944FCBB005458AD /* Lato-BlackItalic.ttf in Resources */,
 				868EF8672941F999005458AD /* TT Norms Pro Black.otf in Resources */,
 				868EF8712941F999005458AD /* TT Norms Pro Medium Italic.otf in Resources */,
@@ -803,6 +839,7 @@
 				868EF8402941EEA7005458AD /* Poppins-ExtraBold.ttf in Resources */,
 				868EF7A729411408005458AD /* LaunchScreen.storyboard in Resources */,
 				868EF83E2941EEA7005458AD /* Poppins-SemiBoldItalic.ttf in Resources */,
+				865F8AB32945C9CC00B46888 /* Segoe UI Bold.ttf in Resources */,
 				868EF8742941F999005458AD /* TT Norms Pro Medium.otf in Resources */,
 				868EF86D2941F999005458AD /* TT Norms Pro ExtraBlack.otf in Resources */,
 				868EF8B42944FCBB005458AD /* Lato-Black.ttf in Resources */,
@@ -821,7 +858,9 @@
 				868EF8662941F999005458AD /* TT Norms Pro Italic.otf in Resources */,
 				868EF8482941EEA7005458AD /* Poppins-Italic.ttf in Resources */,
 				868EF8492941EEA7005458AD /* Poppins-MediumItalic.ttf in Resources */,
+				865F8AB22945C9CC00B46888 /* Segoe UI.ttf in Resources */,
 				868EF7A429411408005458AD /* Assets.xcassets in Resources */,
+				865F8AB12945C9CC00B46888 /* Segoe UI Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +897,7 @@
 				865F8A8E29452E4900B46888 /* ViewModel.swift in Sources */,
 				868EF7D529411E85005458AD /* StrongRouter.swift in Sources */,
 				868EF7CB29411A24005458AD /* ProductsView.swift in Sources */,
+				865F8AAA2945C71C00B46888 /* BadgeButton.swift in Sources */,
 				868EF7B4294115A5005458AD /* BaseCoordinator.swift in Sources */,
 				865F8AA72945681F00B46888 /* ProductReview.swift in Sources */,
 				868EF8042941716F005458AD /* APIRouter.swift in Sources */,
