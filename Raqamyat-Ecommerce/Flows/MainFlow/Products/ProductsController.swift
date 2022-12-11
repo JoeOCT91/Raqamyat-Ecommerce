@@ -81,7 +81,11 @@ final class ProductsController: ViewController, HomeControllerProtocol {
     }
     
     private func setupTitleView() {
-        
+        let tempTitle = "Dresses"
+        let label = UILabel(text: tempTitle)
+        label.textColor = ColorName.black.color
+        label.font = FontFamily.Poppins.medium.font(size: 18)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: label)
     }
 }
 //----------------------------------------------------------------------------------------------------------------
